@@ -11,6 +11,6 @@ COPY luna-1_6_0-linux-amd64 /app/luna
 
 RUN chmod +x /app/luna
 
-EXPOSE 7126
+EXPOSE 7126 7127
 
 ENTRYPOINT ["/app/luna"]
