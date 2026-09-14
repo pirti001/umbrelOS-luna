@@ -1,0 +1,16 @@
+services:
+  luna:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    image: luna:1.6.0
+    container_name: luna
+
+    restart: unless-stopped
+
+    ports:
+      - "7126:7126"
+
+    volumes:
+      - ./data:/data
